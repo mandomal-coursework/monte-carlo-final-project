@@ -48,10 +48,7 @@ To start the experiment I begin with a random distribution of Energy correspondi
 
 (3)	
 
-$f(E)=
-        2\sqrt{\frac{E}{\pi}} 
-        \left(\frac{1}{kT}\right)^{3/2}  
-        \exp\left(\frac{-E}{kT} \right)$
+$f(E)= 2\sqrt{\frac{E}{\pi}} \left(\frac{1}{kT}\right)^{3/2}  \exp\left(\frac{-E}{kT} \right)$
 
 This can be simulated by a chi-squared distribution with 3 degrees of freedom [4]. 
 This is done by simulating random Gaussians centered about (1/3)2keV with deviation of 250 keV for each energy in a 3xN matrix for N particles and summing their squares. 

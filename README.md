@@ -1,17 +1,16 @@
 # !!!DISCLAIMER!!!
 
-This project was created way before I used python, git, or had any real respect for best practice coding standards. 
-As a result, this project is no longer in working order.
-As well I cannot publish the papers used in the research of this project as I do not own the rights.
-The organization of this project should give you an idea of how my workflow was organized.
+This project was created way before I used python, git, or had any semblance of best practice coding standards. 
+As a result, this project would be hard to get running.
+Also, I cannot publish the papers used in the research of this project as I do not own the rights.
+Citations are at the end of this report.
+The reorganization (from its original chaotic form) of this project should give you an idea of how my workflow was organized.
 
 The report has been imbedded to this readme in the section below.
 This should let you know the problem statement, assumptions, approach, execution, and results of the project.
 I think this was a really fun simulation exercise and hope to use Monte Carlo approaches in future work!
 
-
 ---
-
 
 # Electron Ionization in the Atmosphere
 

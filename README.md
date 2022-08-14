@@ -38,12 +38,16 @@ My assumptions for the problem are as follow:
 
 5) The cross section, and therefore the probability of interaction P(A), scales proportionally with the number density of the monoatomic gas. P_0 is the probability at the ground.
 
+<p align="center">
 (2)	$P(A)=P_0 exp⁡(-h/H)$
+</p>
 
 
 To start the experiment I begin with a random distribution of Energy corresponding to the Maxwell-Boltzmann distribution. 
 
+<p align="center">
 (3)	$f(E)= 2\sqrt{\frac{E}{\pi}} \left(\frac{1}{kT}\right)^{3/2}  \exp\left(\frac{-E}{kT} \right)$
+</p>
 
 This can be simulated by a chi-squared distribution with 3 degrees of freedom [4]. 
 This is done by simulating random Gaussians centered about (1/3)2keV with deviation of 250 keV for each energy in a 3xN matrix for N particles and summing their squares. 

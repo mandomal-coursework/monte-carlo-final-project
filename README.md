@@ -32,7 +32,9 @@ My assumptions for the problem are as follow:
 3) The seed population, along with further generations of particles, do not interact with each other. Furthermore the structure of the atmosphere is not affected by the experiment. 
 4) The atmosphere is an undefined monoatomic neutral gas whose density increases exponentially with decreasing altitude h constrained by a characteristic scale height, H. [Hargreaves 1992]
 
+<p align="center">
 (1) $n = n_0 exp⁡(-h/H)$
+</p>
 
 5) The cross section, and therefore the probability of interaction P(A), scales proportionally with the number density of the monoatomic gas. P_0 is the probability at the ground.
 

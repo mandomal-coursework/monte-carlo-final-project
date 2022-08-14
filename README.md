@@ -34,21 +34,21 @@ My assumptions for the problem are as follow:
 4) The atmosphere is an undefined monoatomic neutral gas whose density increases exponentially with decreasing altitude h constrained by a characteristic scale height, H. [Hargreaves 1992]
 
 (1) 
-$$ n = n_0 exp⁡(-h/H) $$
+$ n = n_0 exp⁡(-h/H) $
 
 5) The cross section, and therefore the probability of interaction P(A), scales proportionally with the number density of the monoatomic gas. P_0 is the probability at the ground.
 
 (2)	
-$$ P(A)=P_0 exp⁡(-h/H) $$
+$ P(A)=P_0 exp⁡(-h/H) $
 
 
 To start the experiment I begin with a random distribution of Energy corresponding to the Maxwell-Boltzmann distribution. 
 
 (3)	
-$$ f(E)=
+$ f(E)=
         2\sqrt{\frac{E}{\pi}} 
         \left(\frac{1}{kT}\right)^{3/2}  
-        \exp\left(\frac{-E}{kT} \right)$$
+        \exp\left(\frac{-E}{kT} \right)$
 
 This can be simulated by a chi-squared distribution with 3 degrees of freedom [4]. 
 This is done by simulating random Gaussians centered about (1/3)2keV with deviation of 250 keV for each energy in a 3xN matrix for N particles and summing their squares. 

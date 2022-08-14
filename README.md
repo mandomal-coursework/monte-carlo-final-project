@@ -33,16 +33,19 @@ My assumptions for the problem are as follow:
 3) The seed population, along with further generations of particles, do not interact with each other. Furthermore the structure of the atmosphere is not affected by the experiment. 
 4) The atmosphere is an undefined monoatomic neutral gas whose density increases exponentially with decreasing altitude h constrained by a characteristic scale height, H. [Hargreaves 1992]
 
-(1) $$ n = n_0 exp⁡(-h/H) $$
+(1) 
+$$ n = n_0 exp⁡(-h/H) $$
 
 5) The cross section, and therefore the probability of interaction P(A), scales proportionally with the number density of the monoatomic gas. P_0 is the probability at the ground.
 
-(2)	$$ P(A)=P_0 exp⁡(-h/H) $$
+(2)	
+$$ P(A)=P_0 exp⁡(-h/H) $$
 
 
 To start the experiment I begin with a random distribution of Energy corresponding to the Maxwell-Boltzmann distribution. 
 
-(3)	$$ f(E)=
+(3)	
+$$ f(E)=
         2\sqrt{\frac{E}{\pi}} 
         \left(\frac{1}{kT}\right)^{3/2}  
         \exp\left(\frac{-E}{kT} \right)$$

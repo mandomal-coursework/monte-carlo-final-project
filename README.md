@@ -51,10 +51,15 @@ This can be simulated by a chi-squared distribution with 3 degrees of freedom [4
 This is done by simulating random Gaussians centered about (1/3)2keV with deviation of 250 keV for each energy in a 3xN matrix for N particles and summing their squares. 
 All seed particles begin with a height of 600 km. 
 
-![](reports/figures/report_figures/image1.png)
+<img src=reports/figures/report_figures/image1.png 
+    width=70% 
+    style='display: block; margin:0 auto'>
 
 From here, each seed particle follows a specific flow of logic to determine how much energy it has, how much energy the next generation of ionized particles have, and so forth. The flow for my method is show below.
-![](reports/figures/report_figures/image2.png)
+<img src=reports/figures/report_figures/image2.png 
+    width=70% 
+    style='display: block; margin:0 auto'>
+
 
 
 In greater detail, the electron falls a random distance, $\Delta \tau_e= -\log⁡(r) \tau_e$. 
@@ -81,13 +86,16 @@ Ellastic collisions are assumed such that,
 
 The characteristic scale height is set at H=80km which is a decently physical value [Hargreaves, 1992]. The probabilities scale as shown below. 
 
-![](reports/figures/report_figures/image4.png)
+<img src=reports/figures/report_figures/image4.png 
+    width=70% 
+    style='display: block; margin:0 auto'>
 
 The energy lost due to the interactions is a randomly isotropically distributed number from 0 to 50 eV and 30 eV for ionization and excitation/dissociation respectively. This is demonstrated below.
 
 
 
-![](reports/figures/report_figures/image5.png)
+<img src=reports/figures/report_figures/image5.png 
+    style='display: block; margin:0 auto'>
 
 
 ## 3. Results and Discussion
@@ -95,17 +103,23 @@ Using these assumptions I started with 100 seed particles and was able to obtain
 As done in the paper, we can directly relate the ionization rate to our generated particles by assuming the continuous flux of electrons is exactly our seed population.
 	
 
-![](reports/figures/report_figures/image6.png)
-![](reports/figures/report_figures/image7.png)
+<img src=reports/figures/report_figures/image6.png 
+    width=70% 
+    style='display: block; margin:0 auto'>
+<img src=reports/figures/report_figures/image7.png 
+    width=70% 
+    style='display: block; margin:0 auto'>
 
-Solomon [2001] demonstrates ionization curves for center energies of 1keV, 2keV, 5keV, and 10 keV. 
+Solomon [2001] (top figure above) demonstrates ionization curves for center energies of 1keV, 2keV, 5keV, and 10 keV. 
 Some immediately obvious discrepancies are the scales at which peak ionization occurs and the amount of ionization. 
 Shifting energies to say 1 or 3 keV follow a similar trend although with less fidelity.
 
-
-![](reports/figures/report_figures/image8.png)
-![](reports/figures/report_figures/image9.png)
-
+<img src=reports/figures/report_figures/image8.png 
+    width=70% 
+    style='display: block; margin:0 auto'>
+<img src=reports/figures/report_figures/image9.png 
+    width=70% 
+    style='display: block; margin:0 auto'>
 
 For a Mawell-Boltzmann seed population focused around 1keV, the energy produces a weaker shape at a higher altitude. 
 This should make sense since the particles have less energy to create secondary generations and quickly thermalize. 

@@ -33,22 +33,16 @@ My assumptions for the problem are as follow:
 3) The seed population, along with further generations of particles, do not interact with each other. Furthermore the structure of the atmosphere is not affected by the experiment. 
 4) The atmosphere is an undefined monoatomic neutral gas whose density increases exponentially with decreasing altitude h constrained by a characteristic scale height, H. [Hargreaves 1992]
 
-(1) 
-
-$n = n_0 exp⁡(-h/H)$
+(1) $n = n_0 exp⁡(-h/H)$
 
 5) The cross section, and therefore the probability of interaction P(A), scales proportionally with the number density of the monoatomic gas. P_0 is the probability at the ground.
 
-(2)	
-
-$P(A)=P_0 exp⁡(-h/H)$
+(2)	$P(A)=P_0 exp⁡(-h/H)$
 
 
 To start the experiment I begin with a random distribution of Energy corresponding to the Maxwell-Boltzmann distribution. 
 
-(3)	
-
-$f(E)= 2\sqrt{\frac{E}{\pi}} \left(\frac{1}{kT}\right)^{3/2}  \exp\left(\frac{-E}{kT} \right)$
+(3)	$f(E)= 2\sqrt{\frac{E}{\pi}} \left(\frac{1}{kT}\right)^{3/2}  \exp\left(\frac{-E}{kT} \right)$
 
 This can be simulated by a chi-squared distribution with 3 degrees of freedom [4]. 
 This is done by simulating random Gaussians centered about (1/3)2keV with deviation of 250 keV for each energy in a 3xN matrix for N particles and summing their squares. 
@@ -56,14 +50,14 @@ All seed particles begin with a height of 600 km.
 
 <p align="center">
 <img src=reports/figures/report_figures/image1.png 
-    width=70%>
+    width=60%>
 </p>
 
 From here, each seed particle follows a specific flow of logic to determine how much energy it has, how much energy the next generation of ionized particles have, and so forth. The flow for my method is show below.
 
 <p align="center">
 <img src=reports/figures/report_figures/image2.png 
-    width=70%>
+    width=60%>
 </p>
 
 
@@ -74,7 +68,7 @@ To simplify I will crudely and incorrectly assume 5 meters since this gave an an
 
 <p align="center">
 <img src=reports/figures/report_figures/image3.png 
-    width=70%>
+    width=60%>
 </p>
 
 If the energy is still high enough, E > 25 eV, and the particle has not reached the ground, it will continue onwards to a collision event. The particle may collide in one of three ways.
@@ -98,7 +92,7 @@ The characteristic scale height is set at H=80km which is a decently physical va
 
 <p align="center">
 <img src=reports/figures/report_figures/image4.png 
-    width=70%>
+    width=60%>
 </p>
 
 The energy lost due to the interactions is a randomly isotropically distributed number from 0 to 50 eV and 30 eV for ionization and excitation/dissociation respectively. This is demonstrated below.
@@ -107,7 +101,7 @@ The energy lost due to the interactions is a randomly isotropically distributed 
 
 <p align="center">
 <img src=reports/figures/report_figures/image5.png 
-    width=70%>
+    width=100%>
 </p>
 
 
@@ -118,11 +112,11 @@ As done in the paper, we can directly relate the ionization rate to our generate
 
 <p align="center">
 <img src=reports/figures/report_figures/image6.png 
-    width=70%>
+    width=60%>
 </p>
 <p align="center">
 <img src=reports/figures/report_figures/image7.png 
-    width=70%>
+    width=60%>
 </p>
 
 Solomon [2001] (top figure above) demonstrates ionization curves for center energies of 1keV, 2keV, 5keV, and 10 keV. 
@@ -131,11 +125,11 @@ Shifting energies to say 1 or 3 keV follow a similar trend although with less fi
 
 <p align="center">
 <img src=reports/figures/report_figures/image8.png 
-    width=70%>
+    width=60%>
 </p>
 <p align="center">
 <img src=reports/figures/report_figures/image9.png 
-    width=70%>
+    width=60%>
 </p>
 
 For a Mawell-Boltzmann seed population focused around 1keV, the energy produces a weaker shape at a higher altitude. 
